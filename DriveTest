@@ -1,0 +1,45 @@
+package com.company;
+import java.util.Scanner;
+
+
+
+public class Main {
+
+   public static void main(String[] args) {
+
+
+        //This is the scanner.
+        Scanner in = new Scanner(System.in);
+        int ageForBoys = 15;
+       int ageForGirls = 17;
+
+        System.out.println("Type The boys age");
+
+        int boy = in.nextInt();
+
+        System.out.println("Type The girls age");
+
+        int girl = in.nextInt();
+
+
+        if (ageForBoys > boy && ageForGirls > girl){
+            System.out.println("The boy and the girl are too young to drive");
+
+        }else if (ageForBoys > boy && ageForGirls <= girl){
+            System.out.println("the girl can drive");
+        }else if (ageForBoys <= boy && ageForGirls > girl){
+            System.out.println("the boy can drive");
+
+        }
+
+       else {
+           System.out.println("both of you can drive");
+        }
+
+
+
+
+
+
+    }
+}
